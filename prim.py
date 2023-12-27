@@ -1,5 +1,6 @@
 """ 
 Ele é utilizado para encontrar a árvore geradora mínima em um grafo ponderado, ou seja, um subconjunto de arestas que conecta todos os vértices do grafo com o menor custo total possível, sem formar ciclos.
+é preciso escolher um grafo para começar
 """
 
 class GraphPrim:
@@ -19,7 +20,7 @@ class GraphPrim:
 
             # Percorre os vértices já visitados
             for node in visited:
-                print('node', node)
+                # print('node', node)
                 # Itera sobre os vizinhos do vértice atual
                 for neighbor, weight in self.graph[node].items():
                     # Verifica se o vizinho não está visitado e se seu peso é menor que o mínimo atual

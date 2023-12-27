@@ -23,7 +23,7 @@ class GraphDijkstra:
         while current_node is not None:
             path.insert(0, current_node)
             current_node = self.predecessors[current_node]
-        print(path)
+        # print(path)
         return path
     
     def dijkstra(self, start_node, end_node):
@@ -47,8 +47,8 @@ class GraphDijkstra:
                         # Armazena o predecessor do vizinho que no caso é o atual
                         self.predecessors[neighbor] = current_node
 
-            print(distances)
-            print(self.predecessors)
+            # print(distances)
+            # print(self.predecessors)
             path = self.get_path(start_node, end_node)
             return path, distances[end_node]
 
